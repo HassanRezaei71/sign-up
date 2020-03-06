@@ -11,7 +11,19 @@
   font-family: "shabnam";
 }
 
+@media screen and (max-width: 800px){
+  .main{
+    flex-direction: column;
+    margin: 40px 0
+  }
+  .nav-content ul{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 body {
+  height: 100vh;
   direction: rtl;
   font-family: "shabnam", "Tahoma";
 }
@@ -24,7 +36,7 @@ body {
 
 nav {
   background-color: #0082c8;
-  height: 10vh;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,14 +88,14 @@ nav #bar {
 
 
 .main {
-  height: 90vh;
+  min-height: calc(100% - 80px);
   display: flex;
 }
 
 .main .right-side {
   display: flex;
-  align-items: center;
   flex: 1;
+  align-items: center;
   justify-content: center;
 }
 
@@ -104,6 +116,7 @@ td {
 }
 
 .main .left-side {
+  display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
